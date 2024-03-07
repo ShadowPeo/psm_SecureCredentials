@@ -265,3 +265,6 @@ function Update-secureCredential
         [switch][Alias('Shared')]$aesOnly                        # Use AES Only, do not use DPAPI, can also be Aliased to Shared for clarity when using in a shared environment
     )
 }
+
+# TODO|?: Decrypt the credential on the fly and return as plain-text, PSCredential or SecureString so that it can be used in the script but not held in an actively decrypted state
+
